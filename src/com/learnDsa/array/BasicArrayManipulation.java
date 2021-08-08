@@ -9,7 +9,7 @@ public class BasicArrayManipulation {
     // By kadane's algorithm
     public static int getSubArrayMaxByKadane(int[] arr){
         int currentSum=0;
-        int largestSum=0;
+        int largestSum= Integer.MIN_VALUE;
         for(int x:arr){
             currentSum+=x;
             if(currentSum < 0){
@@ -24,7 +24,7 @@ public class BasicArrayManipulation {
     public static int getSubArrayMaxSumByPrefix(int[] arr) {
         int[] prefixSum = new int[arr.length];
         prefixSum[0] = arr[0];
-        int maxSum=0;
+        int maxSum=Integer.MIN_VALUE;
         int tempSum=0;
         for (int i = 1; i < arr.length; i++) {
             prefixSum[i] = prefixSum[i-1] + arr[i];
@@ -44,7 +44,7 @@ public class BasicArrayManipulation {
 
     // brute force O^3
     public static int getSubArrayMaxSumByBruteForce(int[] arr) {
-        int max = 0;
+        int max = Integer.MIN_VALUE;
         int temp = 0;
         for (int i = 0; i < arr.length; i++) {
             for (int j = i; j < arr.length; j++) {
