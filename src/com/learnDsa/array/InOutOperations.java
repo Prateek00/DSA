@@ -1,5 +1,7 @@
 package com.learnDsa.array;
 
+import com.learnDsa.Helper;
+
 import java.io.*;
 
 
@@ -8,35 +10,44 @@ public class InOutOperations {
     public InOutOperations() {
     }
 
-    public static float getAverage() throws IOException {
-        File file = new File("/home/prateek/Documents/project/DSA/src/resource/input.txt");
-        BufferedReader bufferedReader = new BufferedReader(new FileReader(file));
+    public static float getAverage() {
         float average = 0;
-        if(bufferedReader.ready()){
-            try {
-                //List<Integer> m=  Arrays.stream(bufferedReader.readLine().trim().split(" ")).sequential().map(x->Integer.parseInt(x)).collect(Collectors.toList());
-                String[] studentsMarksString =  bufferedReader.readLine().trim().split(" ");
-                Integer[] studentMarks = new Integer[studentsMarksString.length];
-                int i=0;
-                int sum=0;
-                for(String marks : studentsMarksString){
-                    studentMarks[i++] = Integer.parseInt(marks);
+        try {
+            File file = new File(Helper.INPUT_FILE_PATH);
+            if (file.exists()) {
+                BufferedReader bufferedReader = new BufferedReader(new FileReader(file));
+                if (bufferedReader.ready()) {
+                    String[] studentsMarksString = bufferedReader.readLine().trim().split(" ");
+                    Integer[] studentMarks = new Integer[studentsMarksString.length];
+                    int i = 0;
+                    int sum = 0;
+                    for (String marks : studentsMarksString) {
+                        studentMarks[i++] = Integer.parseInt(marks);
+                    }
+                    for (int x : studentMarks) {
+                        sum += x;
+                    }
+                    average = sum / studentsMarksString.length;
                 }
-                for(int x : studentMarks){
-                    sum+=x;
+                else{
+                    System.out.println("Buffer is not ready for read operation");
                 }
-                average = sum/studentsMarksString.length;
+                bufferedReader.close();
             }
-            catch (Exception exception){
-                System.out.println(exception.getMessage());
+            else {
+                System.out.println("The file : " + Helper.INPUT_FILE_PATH + "does not exists");
             }
 
-        }
-        else {
-            System.out.println("Buffer is not ready");
+        } catch (FileNotFoundException fileNotFoundException) {
+
+        } catch (IOException ioException) {
+
+        } catch (Exception exception) {
+
+        } finally {
+
         }
 
-        bufferedReader.close();
         return average;
     }
 }
