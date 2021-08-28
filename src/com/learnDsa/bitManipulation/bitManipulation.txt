@@ -1,1 +1,6 @@
 -ve numbers are stored in 2's complements.
+0101
+0110
+
+0100
+0011
