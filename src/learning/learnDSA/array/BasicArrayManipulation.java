@@ -5,7 +5,6 @@ public class BasicArrayManipulation {
 
     }
 
-
     // By kadane's algorithm
     public static int getSubArrayMaxByKadane(int[] arr){
         int currentSum=0;

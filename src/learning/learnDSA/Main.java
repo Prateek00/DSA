@@ -10,8 +10,8 @@ public class Main {
             //Float average =  InOutOperations.getAverage();
             //bufferedWriter.write(average.toString());
             //bufferedWriter.close();
-            int[] ar = new int[] {1,2,9,4,5};
-            BasicRecursionProblem.printSpiralSpell(2021);
+            //int[] ar = new int[] {1,2,9,4,5};
+            //BasicRecursionProblem.printSpiralSpell(2021);
             //System.out.println(BasicRecursionProblem.getPower(3,3));
 
 
