@@ -1,4 +1,4 @@
-package com.learnDsa.array;
+package learning.learnDSA.array;
 
 public class SearchAlgo {
     public SearchAlgo() {

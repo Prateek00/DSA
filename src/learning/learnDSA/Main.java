@@ -1,15 +1,6 @@
-package com.learnDsa;
+package learning.learnDSA;
 
-import com.learnDsa.array.BasicArrayManipulation;
-import com.learnDsa.array.InOutOperations;
-import com.learnDsa.array.PassByReference;
-import com.learnDsa.array.SearchAlgo;
-import com.learnDsa.bitManipulation.BasicBitManipulations;
-import com.learnDsa.recursion.BasicRecursionProblem;
-
-import java.io.BufferedWriter;
-import java.io.FileWriter;
-import java.io.IOException;
+import learning.learnDSA.recursion.BasicRecursionProblem;
 
 public class Main {
 

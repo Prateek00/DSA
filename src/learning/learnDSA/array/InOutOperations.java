@@ -1,6 +1,6 @@
-package com.learnDsa.array;
+package learning.learnDSA.array;
 
-import com.learnDsa.Helper;
+import learning.learnDSA.Helper;
 
 import java.io.*;
 
