@@ -1,6 +1,6 @@
 package learning.learnDSA.slidingWindow;
 
-public class BasicSlidingWindowProblem {
+public class BasicSlidingWindowProblem extends Thread {
     //https://leetcode.com/problems/longest-substring-without-repeating-characters/
     public int lengthOfLongestSubstring(String s) {
         int i=0,j=0;
