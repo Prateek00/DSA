@@ -1,6 +1,13 @@
 package learning.learnDSA;
 
+import javafx.util.StringConverter;
 import learning.learnDSA.recursion.BasicRecursionProblem;
+
+import java.text.SimpleDateFormat;
+import java.util.Date;
+import java.util.Locale;
+import java.util.function.Consumer;
+import java.util.function.Predicate;
 
 public class Main {
 
@@ -16,6 +23,29 @@ public class Main {
 
 
             //PassByReference.passArray();
+
+            String regexString = "[]";
+
+            SimpleDateFormat simpleDateFormat = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
+            String myDate = "2020-24-35 05:36:40";
+            Date date = simpleDateFormat.parse(myDate);
+            System.out.println(new Date());
+            System.out.println(date);
+//            // Lambda expression
+//            //Consumer<String> lambda = s -> System.out.println(s);
+//
+//            // Method reference
+//            Consumer<String> reference = System.out::println;
+//
+//            // Lambda expression
+//            StringConverter converterLambda = str -> str.toUpperCase();
+//
+//        // Method reference
+//            StringConverter converterReference = String::toUpperCase;
+//
+//            Predicate<>
+
+
         }
         catch (Exception exception){
             System.out.println("Exception occured : {} " + exception.getMessage());
