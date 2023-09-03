@@ -13,6 +13,7 @@ public class Brian {
     }
     public static void main(String[] args) {
         int input = 11;
+        int[] q = new int[10];
         System.out.println("Set bit is " + findSetBits(input));
     }
 
