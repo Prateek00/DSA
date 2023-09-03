@@ -1,6 +1,8 @@
 package learning.learnDSA.BrianAlgo;
 
 public class Brian {
+
+    // bitwise & of n and n-1 unset rightmost set bit
     public static int findSetBits(int n){
         int count=0;
         while(n > 0){
