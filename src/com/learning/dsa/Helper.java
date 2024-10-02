@@ -1,4 +1,4 @@
-package learning.learnDSA;
+package com.learning.dsa;
 
 public class Helper {
     public static final String INPUT_FILE_PATH = "/home/prateek/Documents/project/DSA/src/resource/input.txt";

@@ -1,4 +1,4 @@
-package learning.learnDSA.binarySearch;
+package com.learning.dsa.binarySearch;
 
 public class Mortgage {
     public int getMonthlyPayment(int loan, int interest, int term){

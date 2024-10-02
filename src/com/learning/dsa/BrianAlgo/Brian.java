@@ -1,4 +1,4 @@
-package learning.learnDSA.BrianAlgo;
+package com.learning.dsa.BrianAlgo;
 
 public class Brian {
 
@@ -16,6 +16,7 @@ public class Brian {
         int[] q = new int[10];
         System.out.println("Set bit is " + findSetBits(input));
     }
+
 
 
 }

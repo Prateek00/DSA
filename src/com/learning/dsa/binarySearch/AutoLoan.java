@@ -1,4 +1,4 @@
-package learning.learnDSA.binarySearch;
+package com.learning.dsa.binarySearch;
 
 public class AutoLoan {
   public double getInterestRate(double price, double monthlyPayment, int loanTerm){

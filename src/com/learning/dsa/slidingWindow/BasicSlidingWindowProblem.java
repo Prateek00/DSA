@@ -1,4 +1,4 @@
-package learning.learnDSA.slidingWindow;
+package com.learning.dsa.slidingWindow;
 
 public class BasicSlidingWindowProblem extends Thread {
     //https://leetcode.com/problems/longest-substring-without-repeating-characters/

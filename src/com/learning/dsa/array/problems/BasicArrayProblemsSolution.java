@@ -1,4 +1,4 @@
-package learning.learnDSA.array.problems;
+package com.learning.dsa.array.problems;
 
 import java.util.Vector;
 

@@ -1,4 +1,4 @@
-package learning.learnDSA.DutchNationalFlag;
+package com.learning.dsa.DutchNationalFlag;
 
 public class DutchFlag {
 

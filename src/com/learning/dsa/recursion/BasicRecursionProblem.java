@@ -1,4 +1,4 @@
-package learning.learnDSA.recursion;
+package com.learning.dsa.recursion;
 
 public class BasicRecursionProblem {
     // time complexity O(n) and space complexity O(n)

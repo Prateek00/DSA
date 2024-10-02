@@ -1,4 +1,4 @@
-package learning.learnDSA.bitManipulation;
+package com.learning.dsa.bitManipulation;
 
 public class BasicBitManipulations {
 
